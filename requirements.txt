@@ -1,0 +1,35 @@
+# Runtime dependencies for idp_anonymiser and sanitiser packages.
+# Tested on Python 3.10–3.12 (recommended: 3.11+).
+
+# --- core ---
+pydantic>=2.5,<3
+typer>=0.9
+PyYAML>=6.0
+
+# --- detection / replacement helpers ---
+Faker>=22.0
+rapidfuzz>=3.5
+phonenumbers>=8.13
+dateparser>=1.2
+
+# --- tabular formats ---
+pandas>=2.1
+openpyxl>=3.1
+
+# --- document formats ---
+python-docx>=1.1
+PyMuPDF>=1.23
+pdfplumber>=0.10
+
+# --- NER (required by sanitiser strict profile; optional for idp_anonymiser) ---
+# Install the model separately after `pip install -r requirements.txt`:
+#     python -m spacy download en_core_web_sm
+spacy>=3.7,<4
+
+# --- optional: Microsoft Presidio (extra recognisers) ---
+# Comment out if you don't need them; they pull in spaCy + NLTK and add ~30s install time.
+# presidio-analyzer>=2.2
+# presidio-anonymizer>=2.2
+
+# --- ML (only needed if you enable advanced detection / fuzzy matching upgrades) ---
+# scikit-learn>=1.3
