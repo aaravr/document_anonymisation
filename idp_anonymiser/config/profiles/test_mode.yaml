@@ -1,0 +1,28 @@
+# Test-mode profile.
+# Includes raw originals in the audit report and uses a fixed deterministic seed.
+# Only ever use this on synthetic test corpora, never on real client documents.
+risk_level: medium
+replacement_mode: synthetic
+consistency_scope: document
+
+confidence_threshold: 0.4
+enable_regex: true
+enable_label_value: true
+enable_table: true
+enable_spacy: false   # speed up test runs by skipping spaCy
+enable_presidio: false
+
+enabled_entities: []
+disabled_entities: []
+preserve_entities: []
+
+validation:
+  max_originals_remaining: 0
+  max_residual_high_confidence: 0
+  quality_floor: 0.6
+
+# Test-mode-only flags consumed by the agent
+debug_include_originals_default: true
+seed: 42
+
+extra_label_rules: []

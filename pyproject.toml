@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "idp_anonymiser"
+version = "0.1.0"
+description = "CPU-first Document Client Data & PII Anonymisation service for Intelligent Document Processing"
+authors = [{ name = "IDP Platform Team" }]
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+keywords = ["pii", "anonymisation", "idp", "kyc", "presidio"]
+
+dependencies = [
+    "pydantic>=2.5",
+    "typer>=0.9",
+    "PyYAML>=6.0",
+    "Faker>=22.0",
+    "rapidfuzz>=3.5",
+    "phonenumbers>=8.13",
+    "dateparser>=1.2",
+    "pandas>=2.1",
+    "openpyxl>=3.1",
+    "python-docx>=1.1",
+    "PyMuPDF>=1.23",
+    "pdfplumber>=0.10",
+]
+
+[project.optional-dependencies]
+nlp = [
+    "spacy>=3.7",
+    "presidio-analyzer>=2.2",
+    "presidio-anonymizer>=2.2",
+    "scikit-learn>=1.3",
+]
+test = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.1",
+    "mypy>=1.7",
+]
+
+[project.scripts]
+idp-anonymise = "idp_anonymiser.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["idp_anonymiser*"]
+
+[tool.setuptools.package-data]
+idp_anonymiser = ["config/profiles/*.yaml"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = ["tests"]

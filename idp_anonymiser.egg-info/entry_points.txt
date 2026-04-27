@@ -1,0 +1,2 @@
+[console_scripts]
+idp-anonymise = idp_anonymiser.cli:app

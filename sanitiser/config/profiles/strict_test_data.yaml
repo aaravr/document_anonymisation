@@ -1,0 +1,30 @@
+profile: strict_test_data
+enable_spacy: true
+fail_if_spacy_unavailable: true
+spacy_model: en_core_web_sm
+replace_real_organisations: true
+replace_public_banks: true
+replace_dates: false
+replace_locations: true
+synthetic_replacements: true
+preserve_semantic_type: true
+global_consistency: true
+chunk_chars: 50000
+chunk_overlap_chars: 1000
+seed: 42
+
+visual_elements:
+  flag_images: true
+  flag_signatures: true
+  flag_logos: true
+  flag_stamps: true
+  flag_qr_codes: true
+  flag_barcodes: true
+  redact_images: true
+
+qa:
+  flag_remaining_capitalised_names: true
+  flag_remaining_org_suffixes: true
+  flag_remaining_abbreviations: true
+  fail_on_remaining_regex_pii: true
+  capitalised_min_tokens: 2

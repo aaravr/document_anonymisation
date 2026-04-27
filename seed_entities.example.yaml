@@ -1,0 +1,24 @@
+# Operator-supplied list of entities to always anonymise even if NER misses them.
+# Used by the seed-list detector. Values here will *always* be replaced.
+
+PERSON:
+  - Victor Dodig
+  - Katharine B. Stevenson
+  - Harry Culham
+  - Hratch Panossian
+
+ORG:
+  - Canadian Imperial Bank of Commerce:
+      abbreviation: CIBC
+  - ING Group:
+      abbreviation: ING
+  - HSBC Holdings plc:
+      abbreviation: HSBC
+  - Barclays Bank PLC:
+      abbreviation: Barclays
+  - Royal Bank of Canada:
+      abbreviation: RBC
+
+LOCATION:
+  - Toronto
+  - London

@@ -1,0 +1,25 @@
+# Strict profile: anonymise medium-confidence detections too. Lower thresholds
+# and aggressive replacement. Use for high-risk releases where we'd rather over-
+# anonymise than risk a leak.
+risk_level: high
+replacement_mode: synthetic
+consistency_scope: document
+
+confidence_threshold: 0.35
+enable_regex: true
+enable_label_value: true
+enable_table: true
+enable_spacy: true
+enable_presidio: true
+spacy_model: en_core_web_sm
+
+enabled_entities: []
+disabled_entities: []
+preserve_entities: []
+
+validation:
+  max_originals_remaining: 0
+  max_residual_high_confidence: 0
+  quality_floor: 0.8
+
+extra_label_rules: []

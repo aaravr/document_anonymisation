@@ -1,0 +1,116 @@
+PERSON:
+  - Ola Källenius
+  - Harald Wilhelm
+  - Britta Seeger
+  - Jörg Burzer
+  - Markus Schäfer
+  - Hubertus Troska
+  - Mathias Geisen
+  - Renata Jungo Brüngger
+  - Bettina Fetzer
+  - Sabine Kohleisen
+  - Bernd Pischetsrieder
+  - Martin Brudermüller
+  - Karl Benz
+  - Gottlieb Daimler
+
+ORG:
+  # Corporate entities
+  - Mercedes-Benz Group AG:
+      abbreviation: MBG
+  - Mercedes-Benz AG:
+      abbreviation: MB
+  - Mercedes-Benz Mobility AG:
+      abbreviation: MBM
+  - Mercedes-Benz:
+      abbreviation: null
+  - Mercedes:
+      abbreviation: null
+  - Benz:
+      abbreviation: null
+  - Daimler Truck Holding AG:
+      abbreviation: Daimler Truck
+  - Daimler AG:
+      abbreviation: Daimler
+  # Brands & sub-brands
+  - Mercedes-AMG:
+      abbreviation: AMG
+  - Mercedes-Maybach:
+      abbreviation: Maybach
+  - Mercedes-EQ:
+      abbreviation: EQ
+  # Car model lines (each is uniquely Mercedes vocabulary)
+  - A-Class:
+      abbreviation: null
+  - B-Class:
+      abbreviation: null
+  - C-Class:
+      abbreviation: null
+  - E-Class:
+      abbreviation: null
+  - S-Class:
+      abbreviation: null
+  - G-Class:
+      abbreviation: null
+  - V-Class:
+      abbreviation: null
+  - T-Class:
+      abbreviation: null
+  - CLA:
+      abbreviation: null
+  - CLE:
+      abbreviation: null
+  - CLS:
+      abbreviation: null
+  - GLA:
+      abbreviation: null
+  - GLB:
+      abbreviation: null
+  - GLC:
+      abbreviation: null
+  - GLE:
+      abbreviation: null
+  - GLS:
+      abbreviation: null
+  - EQA:
+      abbreviation: null
+  - EQB:
+      abbreviation: null
+  - EQC:
+      abbreviation: null
+  - EQE:
+      abbreviation: null
+  - EQS:
+      abbreviation: null
+  - EQT:
+      abbreviation: null
+  - EQV:
+      abbreviation: null
+  - EQG:
+      abbreviation: null
+  - EQXX:
+      abbreviation: null
+  # Vans & light commercial
+  - Sprinter:
+      abbreviation: null
+  - eSprinter:
+      abbreviation: null
+  - Vito:
+      abbreviation: null
+  - eVito:
+      abbreviation: null
+  - Citan:
+      abbreviation: null
+  - eCitan:
+      abbreviation: null
+  - smart:
+      abbreviation: null
+
+LOCATION:
+  - Stuttgart
+  - Sindelfingen
+  - Untertürkheim
+  - Bremen
+  - Rastatt
+  - Affalterbach
+  - Wörth
